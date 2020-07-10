@@ -52,10 +52,7 @@ function LaunchIndex() {
               <Link key={keyName} to={`/launch/${keyName}`}>
                   <div className="pro_card">
                     <div className="pro_img"> 
-                      <img src={shoe.img} alt={shoe.name} style={{
-                        'maxWidth': '400px',
-                        'height': '340px',
-                      }} />
+                      <img src={shoe.img} alt={shoe.name} />
                     </div>
                     <div className="pro_details">
                       <h1 className="head">{shoe.name}</h1>
