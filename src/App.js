@@ -17,6 +17,7 @@ export default function App() {
                 <Route  path="/" component={LaunchIndex} />
               </Route>
               <Route path="/launch/:slug" component={LaunchShoe} />
+              <Route path="*" component={NotFound} />
           </Switch>
         </div>      
       </Router>
@@ -39,6 +40,15 @@ function Launch() {
       <div>
           <h1>Hello</h1>
       </div>
+  )
+}
+
+function NotFound(){
+  return(
+    <div>
+      <h1>Not Found</h1>
+      <p>Sorry your page was not found!</p>
+    </div>
   )
 }
 
