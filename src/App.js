@@ -38,7 +38,7 @@ function Home() {
 function Launch() {
   return (
       <div>
-          <h1>Hello</h1>
+          <h1>Helloo!</h1>
       </div>
   )
 }
