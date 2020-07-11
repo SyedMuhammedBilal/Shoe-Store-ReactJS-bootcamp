@@ -89,20 +89,20 @@ function LaunchShoe() {
 
   return (
     <div>
-      <section class="text-gray-700 body-font">
-        <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
-          <img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" alt="hero" src={shoe.img} />
-          <div class="text-center lg:w-2/3 w-full">
-            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">{shoe.name}</h1>
-            <p class="mb-8 leading-relaxed">{shoe.description}</p>
-            <div class="flex justify-center">
-             <span class="title-font font-medium text-2xl text-gray-900">${shoe.price}</span>
+      <section className="text-gray-700 body-font">
+        <div className="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
+          <img className="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" alt="hero" src={shoe.img} />
+          <div className="text-center lg:w-2/3 w-full">
+            <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">{shoe.name}</h1>
+            <p className="mb-8 leading-relaxed">{shoe.description}</p>
+            <div className="flex justify-center">
+             <span className="title-font font-medium text-2xl text-gray-900">${shoe.price}</span>
             </div>
             <br />
             <br />
-            <div class="flex justify-center">
-              <Link class="inline-flex text-white bg-gray-500 border-0 py-2 px-6 focus:outline-none hover:bg-gray-800 rounded text-lg" to="/launch">Back to products</Link>
-              <button class="ml-4 inline-flex text-white bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-red-800 rounded text-lg">Buy Now</button>
+            <div className="flex justify-center">
+              <Link className="inline-flex text-white bg-gray-500 border-0 py-2 px-6 focus:outline-none hover:bg-gray-800 rounded text-lg" to="/launch">Back to products</Link>
+              <button className="ml-4 inline-flex text-white bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-red-800 rounded text-lg">Buy Now</button>
             </div>
           </div>
         </div>
@@ -115,23 +115,23 @@ function LaunchShoe() {
 function Navbar() {
   return (
       <div>
-          <header class="text-gray-700 body-font">
-              <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-                  <Link class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0" to="/launch">
+          <header className="text-gray-700 body-font">
+              <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+                  <Link className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0" to="/launch">
                   <img src="/images/ll.png" alt="logo" style={{
                     'width':'130px',
                     'height': '75px',
                   }} />
-                  <span class="ml-3 text-xl">Shoe Store</span>
+                  <span className="ml-3 text-xl">Shoe Store</span>
                   </Link>
-                  <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
+                  <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
                   <Link className="mr-5 hover:text-gray-900" to="/">Home</Link>
                   <Link className="mr-5 hover:text-gray-900" to="/launch">Products</Link>
                   <Link className="mr-5 hover:text-gray-900" to="/">Third Link</Link>
                   <Link className="mr-5 hover:text-gray-900" to="/">Fourth Link</Link>
                   </nav>
-                  <Link to="/launch" class="inline-flex items-center bg-gray-200 border-0 py-1 px-3 focus:outline-none hover:bg-gray-300 rounded text-base mt-4 md:mt-0">Shop Now
-                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                  <Link to="/launch" className="inline-flex items-center bg-gray-200 border-0 py-1 px-3 focus:outline-none hover:bg-gray-300 rounded text-base mt-4 md:mt-0">Shop Now
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-1" viewBox="0 0 24 24">
                       <path d="M5 12h14M12 5l7 7-7 7"></path>
                   </svg>
                   </Link>
